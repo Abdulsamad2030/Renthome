@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMERENT</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<style>
+    /* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3f662d;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    flex-direction:column ;
+    display: flex;
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#f0f0f0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #3f662d;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+.btn {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn.light {
+    background-color: #1aa83e;
+    color: #007bff;
+
+}
+
+
+.hero .btn-group {
+    margin-top: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    border: 2px solid #3f662d;
+    border-radius: 5px;
+    background: #3f662d;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.hero .btn.light {
+    background: #fff;
+    color: #3f662d;
+}
+
+.hero img {
+    max-width: 30%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+  
+}
+
+.section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section img {
+   width: 30%;
+   height: auto;
+   margin-top: 20px;
+}
+
+.section .text {
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #3f662d;
+}
+
+.section p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.section .btn {
+    padding: 10px 20px;
+    border: 2px solid #3f662d;
+    border-radius: 5px;
+    background: #3f662d;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service {
+    width: 20%;
+    margin: 20px 0;
+    padding: 10px;
+    border: 3px solid #498a2b;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #3f662d;
+    margin: 20px 0 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.testimonial {
+    width: 20%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #3f662d;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 80%;
+    height:auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    font-size: 24px;
+    color: #3f662d;
+    margin: 20px 0 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer .designed-by {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer .designed-by a {
+    color: #00f;
+    text-decoration: none;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">HOMERENT</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Your Rental Journey Begins Here</h1>
+        <p>We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
+        <div class="btn-group">
+            <a href="#" class="btn">Rent Now</a>
+            <a href="#" class="btn light">Rent Your Place</a>
+            <img src="IMG_20240804_201346.jpg" alt="Hero Image">
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-content">
+            <img src="Screenshot_20240804_201639.jpg" alt="House Image">
+            <div class="text">
+                <h2>Begin your awesome journey</h2>
+                <p>Looking for the perfect home to rent? Our user-friendly house rental website makes your search a breeze. Browse through a diverse range of listings, from cozy apartments to spacious family houses.</p>
+                <a href="#" class="btn">Continue</a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>See Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Responsive</h3>
+                <p>Our commitment to being responsive means that your concerns and efficient.</p>
+            </div>
+            <div class="service">
+                <h3>Green</h3>
+                <p>Experience the convenience of our responsive platform, ensuring swift communication.</p>
+            </div>
+            <div class="service">
+                <h3>Security</h3>
+                <p>Ensuring swift communication and quick solutions for all your rental needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>What Customers Say About Our Services</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+<img src="IMG_20240811_125041.jpg" alt="David Anderson">
+                <h3>David Anderson</h3>
+                <p>"I loved the experience, renting a home was an pleasure. From the communication was seamless and professional."</p>
+            </div>
+            <div class="testimonial">
+<img src="IMG_20240811_125816.jpg" alt="Alex Mitchell">
+                <h3>Alex Mitchell</h3>
+                <p>"It was an amazing experience, the attention to detail, personalized approach made the entire process stress-free."</p>
+            </div>
+            <div class="testimonial">
+<img src="IMG_20240811_125828.jpg" alt="Ryan Bennett">
+                <h3>Ryan Bennett</h3>
+                <p>"Our experience was so good with renting services exceeded all expectations. Demonstrated a deep understanding."</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h3>Useful links</h3>
+                <a href="#">About us</a>
+                <a href="#">Events</a>
+                <a href="#">Blogs</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div>
+                <h3>Main Menu</h3>
+                <a href="#">Home</a>
+                <a href="#">Offers</a>
+                <a href="#">Menus</a>
+                <a href="#">Reservation</a>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <a href="Email to:>murtalaabdulsamad142@yahoo.com">murtalaabdulsamad142@yahoo.com</a>
+                <a href="tel:+2347042914473">+234 70 42 91 44 73 /a>
+                <a href="#">Social media</a>
+            </div>
+        </div>
+        <div class="designed-by">
+            Designed by <a href="https://x.com/Abdulsamadmur12?s=09" target="_blank">@Abdulsamadmur
